@@ -232,7 +232,7 @@ Object
 function withDescription(fn) {
     return function (node) {
         const desc = getDescription(node);
-        const descText = desc ? '# ' + desc + '\n' : '';
+        const descText = desc ? desc.replace(/^/gm, '# ') + '\n' : '';
         return descText + fn(node);
     }
 }
