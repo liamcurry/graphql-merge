@@ -12,7 +12,8 @@ test('formatString', async t => {
 # Foo is a thing
 type Foo {
 
-  # Baz is a string
+  # Baz is a string, and it
+  # is optional.
   baz: String
 
 }`
@@ -24,7 +25,8 @@ type Foo {
 
 # Foo is a thing
 type Foo {
-  # Baz is a string
+  # Baz is a string, and it
+  # is optional.
   baz: String
 }
 `;
